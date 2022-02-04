@@ -1,5 +1,5 @@
-const express = require( "express" );
-
+import {createExpressServer} from 'routing-controllers';
+import {UsersController} from './controllers/UsersController';
 import "reflect-metadata";
 import {createConnection} from "typeorm";
 import {User} from "./entity/User";
@@ -19,12 +19,10 @@ createConnection().then(async connection => {
     console.log("Loaded users: ", users);
 }).catch(error => console.log(error));
 
-const app = express();
-const port = 3000;
-
-app.get('/', (req, res) => {
-    res.send('Hello World!')
+const app = createExpressServer({
+    controllers: [UsersController],
 });
+const port = 3000;
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
