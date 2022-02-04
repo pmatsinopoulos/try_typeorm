@@ -4,7 +4,7 @@ import { Controller, Param, Body, Get, Post, Put, Delete } from 'routing-control
 export class UsersController {
   @Get('/users')
   getAll() {
-    return 'This action returns all users';
+    return {body: 'This action returns all users', status: 201};
   }
 
   @Get('/users/:id')
