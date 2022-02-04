@@ -1,0 +1,55 @@
+Arguments: 
+  /Users/panayotismatsinopoulos/.nvm/versions/node/v14.17.0/bin/node /Users/panayotismatsinopoulos/.yvm/versions/v1.22.17/bin/yarn.js add typeorm_extension
+
+PATH: 
+  /Users/panayotismatsinopoulos/.jenv/shims:/Users/panayotismatsinopoulos/.jenv/bin:/Users/panayotismatsinopoulos/.gobrew/current/bin:/Users/panayotismatsinopoulos/.gobrew/bin:/Users/panayotismatsinopoulos/.nvm/versions/node/v14.17.0/bin:/Users/panayotismatsinopoulos/.rbenv/shims:/usr/local/Cellar/yvm/3.5.0/shim:/Users/panayotismatsinopoulos/android-sdk/emulator:/usr/local/share/android-sdk/emulator:/usr/local/share/android-sdk/platform-tools:/usr/local/share/android-sdk/tools:/usr/local/share/android-sdk/tools/bin:/Users/panayotismatsinopoulos/.cargo/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/opt/python/libexec/bin:/usr/local/opt/qt@5.5/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/MacGPG2/bin:/opt/X11/bin:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/panayotismatsinopoulos/Documents/try_typeorm/node_modules/.bin:/Users/panayotismatsinopoulos/.local/bin:/Users/panayotismatsinopoulos/Documents/flutter/bin:/Applications/Postgres.app/Contents/Versions/11.13/bin:/usr/local/opt/go/libexec/bin:/usr/local/Cellar/elixir/1.2.3/bin:/usr/local/mysql/bin:/usr/local/sbin:/Users/panayotismatsinopoulos/Documents/go/bin:./node_modules/.bin:/Users/panayotismatsinopoulos/Library/Developer/Xamarin/android-sdk-macosx/platform-tools:/Users/panayotismatsinopoulos/bin:/Users/panayotismatsinopoulos/Qt5.5.0/5.5/clang_64/bin:/Users/panayotismatsinopoulos/bin/apache-jmeter-5.2.1/bin:/Applications/Postgres.app/Contents/Versions/11/bin:/Users/panayotismatsinopoulos/bin/boost.build/bin:/Users/panayotismatsinopoulos/.local/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  14.17.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/typeorm_extension: Not found
+      at Request.params.callback [as _callback] (/Users/panayotismatsinopoulos/.yvm/versions/v1.22.17/lib/cli.js:67029:18)
+      at Request.self.callback (/Users/panayotismatsinopoulos/.yvm/versions/v1.22.17/lib/cli.js:140883:22)
+      at Request.emit (events.js:376:20)
+      at Request.<anonymous> (/Users/panayotismatsinopoulos/.yvm/versions/v1.22.17/lib/cli.js:141855:10)
+      at Request.emit (events.js:376:20)
+      at IncomingMessage.<anonymous> (/Users/panayotismatsinopoulos/.yvm/versions/v1.22.17/lib/cli.js:141777:12)
+      at Object.onceWrapper (events.js:482:28)
+      at IncomingMessage.emit (events.js:388:22)
+      at endReadableNT (internal/streams/readable.js:1336:12)
+      at processTicksAndRejections (internal/process/task_queues.js:82:21)
+
+npm manifest: 
+  {
+     "name": "try_typeorm",
+     "version": "0.0.1",
+     "description": "Awesome project developed with TypeORM.",
+     "devDependencies": {
+        "ts-node": "3.3.0",
+        "@types/node": "^8.0.29",
+        "typescript": "3.3.3333"
+     },
+     "dependencies": {
+        "typeorm": "0.2.41",
+        "reflect-metadata": "^0.1.10",
+        "mysql": "^2.14.1",
+        "pg": "^8.4.0"
+     },
+     "scripts": {
+        "start": "ts-node src/index.ts",
+        "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js"
+     }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
